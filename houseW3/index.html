@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HouseWarmth</title>
+        <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/classic.min.css"/>
+        <link rel="stylesheet" href="stylish.css">
+    </head>
+    <body>
+        <header>
+            <canvas id="can1"></canvas>
+            <nav id="navi">
+                <span id="title">housewarmth.com</span>
+            </nav>
+            <nav id="navlower">
+                <a class="navbtns" id="homebtn">⌂</a>   
+                <div id="menu">
+                    <ul class="dropmenu">
+                        <li>
+                            <a id="menubtnhov" href="#">☰</a>
+                            <ul class="sub">
+                                <li id="gamebtn"><a id="gamebtnhov" href="#">Game</a></li>
+                                <li id="resumebtn"><a  id="resumebtnhov" href="#">Resume</a></li>
+                                <li id="gallerybtn"><a  id="gallerybtnhov" href="#">Gallery</a></li>
+                                <li id="star"><a id="starbtnhov" href="#">A*</a></li>
+                                <li id="setbtn"><a id="setbtnhov" href="#">⚙</a></li>
+                                <ul class="sub">         
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        
+        <div id="main">
+
+            <div id="home">
+
+                <span>
+                    Welcome. <br><br>
+                    This website was <br><br>built to showcase<br><br>JavaScript animations 
+                    <br><br>and other portfolio pieces.<br><br>  
+                </span>
+                <img id="pipefire" src="art/pipefire.gif"></img>
+            </div>
+
+            <div id="game">
+                <span>
+                    This is a puzzle game;<br>play using your arrow keys.
+                </span>
+                <canvas id="hwcanvas"></canvas>
+                <audio src="soundfx/midi_jams_v2.mp3" id="theme_song"></audio>
+                <audio src="soundfx/teleport.wav" id="teleport"></audio>
+                <audio src="soundfx/collision.mp3" id="collision"></audio>
+
+            </div>
+
+            <div id="resume">
+                <span id="name">Nathaniel</span>
+                <hr>
+                <span id="jobtitle"><br> IT - Network Security & Software Development<br>
+                    -Pacific NW-<br><br>
+                </span>
+                <hr><br>
+                <span id="rescon">
+                    <span id="skilltitle">Skills</span><br> 
+                    <img src="art/JavaScript-logo.png" width="6%" height="9.5%"></img>
+                    <img src="art/python.svg.png" width="5%" height="9%"></img>
+                    <img src="art/unnamed.gif" width="10%" height="10%"></img>
+                    <img src="art/ccna_600.png" width="8%" height="13%"></img>
+                    <br><br>
+                    JavasScript, Python, HTML, CSS<br><br>
+                    CompTIA A+ Certified - IT Technician (2020)<br><br>
+                    CCNA Certified - Routing & Switching (2021)<br><br>
+                    Intuitive, creative, & motivated problem solver<br><br><hr><br>
+                    Experience & Education<br><hr><br>
+                    AAS Degree in Cyber Security, 3.7 GPA (2020-2021) Whatcom Community College<br><br>
+                    Technology Studies & General Education (2019-2020) Central Oregon Community College<br><br>
+                    Full Stack Programming Certification (2018-2019) PDX Code Guild<br><br>
+                    HS Graduate - Honors In Science (2015) Portland Community College<br><br>
+                    Talented & Gifted Program (2007-2012) Bend-LaPine School District<br><br><hr><br><br>
+                </span>
+            </div>
+      
+            <div id="astar">
+                <p>A* Pathfinding Algorithm Visualizer</p>
+                <canvas id='maze' width='400' height='400'></canvas>
+                <div id="mazebtns">
+                    <button class="mazebtn" onclick = "solveMaze()">Solve</button>
+                    <button class="mazebtn" onclick = "reset()">Reset</button>
+                </div>
+                <p id="outcome">Click the purple squares to build a maze.</p>
+            </div>
+
+            <div id="settings">
+                
+                <div id="themenav">
+                    <button id="darktheme">dark theme</button>
+                    <button id="lighttheme">light theme</button>
+                </div>
+
+                <span>edit accent style</span>
+                <div class="color-picker"></div>
+
+            </div>
+            <div id="gallery">
+                <span>test</span>
+            </div>
+            
+        </div>
+
+            <span id="vers">© 2022 | Version 2.2.1</span>
+
+<!-- javascript -->
+
+        <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+        <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.min.js"></script>
+
+        <script 
+            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js" 
+            integrity="sha512-8Wy4KH0O+AuzjMm1w5QfZ5j5/y8Q/kcUktK9mPUVaUoBvh3QPUZB822W/vy7ULqri3yR8daH3F58+Y8Z08qzeg==" 
+            crossorigin="anonymous">
+        </script>
+
+        <script 
+            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineMax.min.js" 
+            integrity="sha512-lJDBw/vKlGO8aIZB8/6CY4lV+EMAL3qzViHid6wXjH/uDrqUl+uvfCROHXAEL0T/bgdAQHSuE68vRlcFHUdrUw==" 
+            crossorigin="anonymous">
+        </script>
+
+        <script 
+            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js" 
+            integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg==" 
+            crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+        
+        <script src="sitefunctions.js"></script>
+        <script src="javadance.js"></script>
+        <script src="hwgame.js"></script>
+        <script src="mazerunner.js"></script>
+            
+    </body>
+</html>
