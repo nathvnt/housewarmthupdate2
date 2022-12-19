@@ -20,6 +20,7 @@ p{
     height: 100%;
     background-color: rgb(0,0,0);
     z-index: -5;
+    /* background-size: cover; */
 }
 
 #vers{
@@ -184,6 +185,13 @@ nav ul.sub li ul.sub {
     border-top: none; 
   }
 
+  #game-wrapper {
+    display: none;
+    height: 600px;
+    overflow: hidden;
+    overflow-y:scroll;
+  }
+
   /* ---------------------- */
   #home{   
     padding-top: 2%;
@@ -226,7 +234,7 @@ nav ul.sub li ul.sub {
     display: none;
   }
   
-  #resumebtn{
+  #resumebtn, #star{
     display: none;
   }
   

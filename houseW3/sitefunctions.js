@@ -223,6 +223,9 @@ $(document).ready(function() {
         $("#home").css("display","flex");
         $("#settings").css("display","none");
         $("#gallery").css("display","none");
+        $("#game-wrapper").css("display","none");
+        $("#main").css("padding-top","0%");
+        $("#main").css("padding-bottom","2%");
     });  
 });
 
@@ -237,34 +240,9 @@ $(document).ready(function() {
         $("#home").css("display","none");
         $("#settings").css("display","none");
         $("#gallery").css("display","none");
-    });  
-});
-
-$(document).ready(function() {
-    $("#star").click(function(){
-        $("#home").css("display","none");
-        $("#can3").css("display","none");
-        $("#game").css("display","none");
-        $("#hwcanvas").css("display","none");
-        $("#resume").css("display","none");
-        $("#main").css("display","flex");
-        $("#astar").css("display","flex");
-        $("#settings").css("display","none");
-        $("#gallery").css("display","none");
-    });
-});
-
-$(document).ready(function() {
-    $("#resumebtn").click(function(){
-        $("#home").css("display","none");
-        $("#can3").css("display","none");
-        $("#astar").css("display","none");
-        $("#game").css("display","none");
-        $("#hwcanvas").css("display","none");
-        $("#main").css("display","flex");
-        $("#resume").css("display","block");
-        $("#settings").css("display","none");
-        $("#gallery").css("display","none");
+        $("#game-wrapper").css("display","block");
+        $("#main").css("padding-top","1%");
+        $("#main").css("padding-bottom","1%");
     });  
 });
 
@@ -279,6 +257,9 @@ $(document).ready(function() {
         $("#resume").css("display","none");
         $("#settings").css("display","block");
         $("#gallery").css("display","none");
+        $("#game-wrapper").css("display","none");
+        $("#main").css("padding-top","0%");
+        $("#main").css("padding-bottom","2%");
     });  
 });
 
@@ -293,6 +274,9 @@ $(document).ready(function() {
         $("#home").css("display","flex");
         $("#settings").css("display","none");
         $("#gallery").css("display","none");
+        $("#game-wrapper").css("display","none");
+        $("#main").css("padding-top","0%");
+        $("#main").css("padding-bottom","2%");
     });  
 });
 
@@ -307,6 +291,9 @@ $(document).ready(function() {
         $("#resume").css("display","none");
         $("#settings").css("display","none");
         $("#gallery").css("display","block");
+        $("#game-wrapper").css("display","none");
+        $("#main").css("padding-top","0%");
+        $("#main").css("padding-bottom","2%");
     });  
 });
 

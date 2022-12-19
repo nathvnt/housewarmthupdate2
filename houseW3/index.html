@@ -21,7 +21,7 @@
                         <li>
                             <a id="menubtnhov" href="#">☰</a>
                             <ul class="sub">
-                                <li id="gamebtn"><a id="gamebtnhov" href="#">Game</a></li>
+                                <li id="gamebtn"><a id="gamebtnhov" href="#">Portfolio</a></li>
                                 <li id="resumebtn"><a  id="resumebtnhov" href="#">Resume</a></li>
                                 <li id="gallerybtn"><a  id="gallerybtnhov" href="#">Gallery</a></li>
                                 <li id="star"><a id="starbtnhov" href="#">A*</a></li>
@@ -45,54 +45,34 @@
                 </span>
                 <img id="pipefire" src="art/pipefire.gif"></img>
             </div>
-
-            <div id="game">
-                <span>
-                    This is a puzzle game;<br>play using your arrow keys.
-                </span>
-                <canvas id="hwcanvas"></canvas>
-                <audio src="soundfx/midi_jams_v2.mp3" id="theme_song"></audio>
-                <audio src="soundfx/teleport.wav" id="teleport"></audio>
-                <audio src="soundfx/collision.mp3" id="collision"></audio>
-
-            </div>
-
-            <div id="resume">
-                <span id="name">Nathaniel</span>
-                <hr>
-                <span id="jobtitle"><br> IT - Network Security & Software Development<br>
-                    -Pacific NW-<br><br>
-                </span>
-                <hr><br>
-                <span id="rescon">
-                    <span id="skilltitle">Skills</span><br> 
-                    <img src="art/JavaScript-logo.png" width="6%" height="9.5%"></img>
-                    <img src="art/python.svg.png" width="5%" height="9%"></img>
-                    <img src="art/unnamed.gif" width="10%" height="10%"></img>
-                    <img src="art/ccna_600.png" width="8%" height="13%"></img>
-                    <br><br>
-                    JavasScript, Python, HTML, CSS<br><br>
-                    CompTIA A+ Certified - IT Technician (2020)<br><br>
-                    CCNA Certified - Routing & Switching (2021)<br><br>
-                    Intuitive, creative, & motivated problem solver<br><br><hr><br>
-                    Experience & Education<br><hr><br>
-                    AAS Degree in Cyber Security, 3.7 GPA (2020-2021) Whatcom Community College<br><br>
-                    Technology Studies & General Education (2019-2020) Central Oregon Community College<br><br>
-                    Full Stack Programming Certification (2018-2019) PDX Code Guild<br><br>
-                    HS Graduate - Honors In Science (2015) Portland Community College<br><br>
-                    Talented & Gifted Program (2007-2012) Bend-LaPine School District<br><br><hr><br><br>
-                </span>
-            </div>
-      
-            <div id="astar">
-                <p>A* Pathfinding Algorithm Visualizer</p>
-                <canvas id='maze' width='400' height='400'></canvas>
-                <div id="mazebtns">
-                    <button class="mazebtn" onclick = "solveMaze()">Solve</button>
-                    <button class="mazebtn" onclick = "reset()">Reset</button>
+            
+            <div id="game-wrapper">
+                <div id="game">
+                    <span style="text-decoration: underline;">
+                        JavaScript Portfolio<br><br>
+                    </span>
+                    <span>
+                        This is a puzzle game;<br>play using your arrow keys.
+                    </span>
+                    <canvas id="hwcanvas"></canvas><span><br><br></span>
+                    <audio src="soundfx/midi_jams_v2.mp3" id="theme_song"></audio>
+                    <audio src="soundfx/teleport.wav" id="teleport"></audio>
+                    <audio src="soundfx/collision.mp3" id="collision"></audio>
+                    
+                    <p>A* Pathfinding Algorithm Visualizer;</p>
+                    <p id="outcome">Click the purple squares to build a maze.</p>
+                    <canvas id='maze' width='400' height='400'></canvas>
+                    <span><br></span>
+                    <div id="mazebtns">
+                        <button class="mazebtn" onclick = "solveMaze()">Solve</button>
+                        <button class="mazebtn" onclick = "reset()">Reset</button>
+                    </div>
+             
                 </div>
-                <p id="outcome">Click the purple squares to build a maze.</p>
             </div>
+
+            <div id="resume"></div>
+            <div id="astar"></div>
 
             <div id="settings">
                 
@@ -105,13 +85,14 @@
                 <div class="color-picker"></div>
 
             </div>
+
             <div id="gallery">
                 <span>test</span>
             </div>
             
         </div>
 
-            <span id="vers">© 2022 | Version 2.2.1</span>
+            <span id="vers">© 2022 | Version 3.1.3</span>
 
 <!-- javascript -->
 
