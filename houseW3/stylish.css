@@ -5,6 +5,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html{
+  overflow: auto;
+  height: 100%;
+  overscroll-behavior: none;
+}
+body{
+  overflow: auto;
+  height: 100%;
+  overscroll-behavior: none;
+}
 p{
   color: white;
   font-family: 'Share Tech Mono', monospace;
