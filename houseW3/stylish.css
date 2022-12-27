@@ -7,15 +7,17 @@
 }
 
 html{
-  overflow: auto;
+  overflow: hidden;
   height: 100%;
   overscroll-behavior: none;
 }
+
 body{
   overflow: auto;
   height: 100%;
   overscroll-behavior: none;
 }
+
 p{
   color: white;
   font-family: 'Share Tech Mono', monospace;
@@ -323,6 +325,7 @@ nav ul.sub li ul.sub {
   #settings{
     color: rgb(255,255,240);
     display: none;
+    font-family: 'Share Tech Mono', monospace;
   }
 
   #gallery{
