@@ -322,7 +322,7 @@ tippy('#menubtnhov', {
     content: "Menu",
     // placement: 'right',
     theme: 'dark',
-    arrow: false,
+    arrow: true,
 });
 tippy('#setbtnhov', {
     content: "Settings",
